@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="en"><head>
+<title>Food Landing Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/landpage.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+.navbar {
+ background-color: white;
+height: 73px;  /*Adjust height as needed */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+} 
+
+ /* Style for the logo */
+ 
+.logo {
+max-height: 60px; /* Adjust max-height as needed*/
+ width: auto;
+ padding: 9px;
+}
+         
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 66px;
+    z-index: 99;
+    font-size: 22px;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 19px 3px 19px;
+    border-radius: 34px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 31%);
+}
+@media screen and (max-device-width: 640px) {
+#goToTopBtn {
+    right: 26px;}
+}
+@media screen and (max-device-width: 1075px) {
+#goToTopBtn {
+    right: 16px;}
+}
+
+#goToTopBtn:hover {
+    background-color: #cdcfd0;
+}
+/* #book-now{
+  position: relative;
+} */
+#book-reserve{
+  position: relative;
+  content: "";
+  background-image: url(images/reserve.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0.5;
+}
+</style>
+</head>
+<body>
+<!-- Navbar with Logo  -->
+  
+<!-- Navbar -->
+<div class="landpage-top">
+  <div class="navbar">
+    <img src="images/logo2.png" alt="Logo" class="logo">
+</div>
+  <div class="landpage-bar landpage-black landpage-card">
+    <a class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-medium landpage-hide-large landpage-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="landpage-bar-item landpage-button landpage-padding-large">HOME</a>
+    <a href="#about" class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-small">ABOUT US</a>
+    <a href="#book-now" class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-small">RESERVATIONS</a>
+    <a href="#contact" class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-small">CONTACT</a>
+    <div class="landpage-dropdown-hover landpage-hide-small">
+      <button class="landpage-padding-large landpage-button" title="More">MENU <i class="fa fa-caret-down"></i></button>     
+      <div class="landpage-dropdown-content landpage-bar-block landpage-card-4">
+        <a href="italian-extra.html" class="landpage-bar-item landpage-button" target="_blank">ITALIAN FOOD</a>
+        <a href="thai.html" class="landpage-bar-item landpage-button" target="_blank">THAI FOOD</a>
+        <a href="pakistani.html" class="landpage-bar-item landpage-button" target="_blank">PAKISTANI FOOD</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="landpage-bar-block landpage-black landpage-hide landpage-hide-large landpage-hide-medium landpage-top" style="margin-top:103px">
+  <a href="#about" class="landpage-bar-item landpage-button landpage-padding-large" style="font-size: 12px;
+  line-height: 1.8; margin-top: 4%;" onclick="myFunction()">ABOUT US</a>
+  <a href="#book-now" class="landpage-bar-item landpage-button landpage-padding-large" style="font-size: 12px;
+  line-height: 1.8;" onclick="myFunction()">RESERVATIONS</a>
+  <a href="#contact" class="landpage-bar-item landpage-button landpage-padding-large" style="font-size: 12px;
+  line-height: 1.8;" onclick="myFunction()">CONTACT</a>
+  <h2 style="position: relative; left: 7%; font-size: 100%; margin-bottom: 2%; margin-top: 7%; text-decoration: underline; font-weight: 500;">MENU</h2>
+  <a href="italian-extra.html" class="landpage-bar-item landpage-button" style="font-size: 12px;
+  line-height: 1.8;" onclick="myFunction()" target="_blank">ITALIAN FOOD</a>
+  <a href="thai.html" class="landpage-bar-item landpage-button" style="font-size: 12px;
+  line-height: 1.8;" onclick="myFunction()" target="_blank">THAI FOOD</a>
+  <a href="pakistani.html" class="landpage-bar-item landpage-button" style="font-size: 12px;
+  line-height: 1.8;" onclick="myFunction()" target="_blank">PAKISTANI FOOD</a>    
+  
+</div>
+
+<!-- Page content -->
+<div class="landpage-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides landpage-display-container landpage-center" style="display: block;">
+    <img src="images/pizza.jpg" style="width: 100%;">
+    <div class="landpage-display-bottommiddle landpage-container landpage-text-white landpage-padding-32 landpage-hide-small">
+      <h3 style="font-size: 35px;">Oven Fresh Pizza</h3>
+      <p style="font-size: 22px;"><b>Experience the live Oven Fresh Pizza making!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides landpage-display-container landpage-center" style="display: none;">
+    <img src="images/bbq.jpg" style="width: 100%;">
+    <div class="landpage-display-bottommiddle landpage-container landpage-text-white landpage-padding-32 landpage-hide-small">
+      <h3 style="font-size: 35px; color: white;" >Barbeque</h3>
+      <p style="font-size: 22px; color: white;"><b>Experience hot and sizzling chicken barbeque here!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides landpage-display-container landpage-center" style="display: none;">
+    <img src="images/thai.jpg" style="width: 100%;">
+    <div class="landpage-display-bottommiddle landpage-container landpage-text-white landpage-padding-32 landpage-hide-small">
+      <h3 style="font-size: 35px; color: white;">Thai Green Curry</h3>
+      <p style="font-size: 22px; color: white;"><b>Fulfill your cravings for delicious Thai food right now!</b></p>    
+    </div> 
+  </div>
+
+  <!-- The About Section -->
+  <div class="landpage-container landpage-content landpage-center landpage-padding-64" style="max-width:800px" id="about">
+    <h2 class="landpage-wide" style="letter-spacing: 0px;">ABOUT US</h2>
+    <p class="landpage-opacity"><b>We Serve Deliciousness</b></p>
+    <p class="landpage-justify">"Welcome to <strong>Palate Delights</strong>, where we bring the flavors of Italy, the smoky goodness of BBQ, and the vibrant spices of Thailand to your plate. Our passion for authentic cuisine drives us to create dishes that are not only delicious but also true to their origins. <br><br>
+
+      In our kitchen, experienced chefs craft each dish with care, using only the finest ingredients and traditional cooking techniques. Whether you're craving a classic Italian pasta dish, a mouthwatering BBQ platter, or a spicy Thai curry, we have something to satisfy every craving.<br><br>
+      
+      At <strong>Palate Delights</strong>, we believe that food is more than just sustenance—it's an experience. Join us for a culinary journey that celebrates the diversity and richness of global cuisine, right here in [Location]."</p>
+      
+     
+      <div class="landpage-row landpage-padding-32" style="display: flex; justify-content: space-between;">
+    
+      <div class="landpage-third">
+        <p>Female Chef</p>
+        <img src="images/chef.png" class="landpage-round landpage-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <!-- <div class="landpage-third">
+        <p>Name</p>
+        <img src="images/chef2.png" class="landpage-round" alt="Random Name" style="width: 60%">
+      </div> -->
+      <div class="landpage-third">
+        <p>Male Chef</p>
+        <img src="images/chef1.png" class="landpage-round landpage-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Schedule Section -->
+  <div class="landpage-black" id="book-reserve" style="position: relative;">
+    <div class="landpage-container landpage-content landpage-padding-64"  style="max-width:800px; z-index: 1;">
+      <h2 class="landpage-wide landpage-center">RESERVE YOUR TABLE</h2>
+      <p class="landpage-opacity landpage-center">Please reserve your table on weekends</p><br>
+
+      <ul class="landpage-ul landpage-border landpage-white landpage-text-grey">
+        <li class="landpage-padding">
+          <span style="display: inline-block; width: 100px;">Monday</span>
+          <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 12AM</span>
+      </li>
+      <li class="landpage-padding">
+        <span style="display: inline-block; width: 100px;">Tuesday</span>
+        <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 12AM</span>
+      </li>
+      <li class="landpage-padding">
+        <span style="display: inline-block; width: 100px;">Wednesday</span>
+        <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 12AM</span>
+      </li>
+      <li class="landpage-padding">
+        <span style="display: inline-block; width: 100px;">Thursday</span>
+        <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 12AM</span>
+      </li>
+      <li class="landpage-padding">
+        <span style="display: inline-block; width: 100px;">Friday</span>
+        <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 12AM</span>
+      </li>
+      <li class="landpage-padding">
+        <span style="display: inline-block; width: 100px;">Saturday</span>
+        <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 2AM</span>
+      </li>
+      <li class="landpage-padding">
+        <span style="display: inline-block; width: 100px;">Sunday</span>
+        <span class="landpage-tag landpage-red landpage-margin-left">Opening 12PM -- Closing 2AM</span>
+      </li>
+
+      <div class="landpage-row-padding landpage-padding-32" style="margin:0 -16px">
+        <div class="landpage-third landpage-margin-bottom">
+          <img src="images/dallas.jpg" alt="New York" style="width:100%" class="landpage-hover-opacity">
+          <div class="landpage-container landpage-white">
+            <p><b>Dallas (Main Franchise)</b></p>
+            <p class="landpage-opacity">Since February,2017</p>
+            <p>123 Main Street, Dallas, TX 75201, United States</p>
+            <button class="landpage-button landpage-black landpage-margin-bottom" onclick="document.getElementById('orderNow').style.display='block'">Reservation</button>
+          </div>
+        </div>
+        <div class="landpage-third landpage-margin-bottom">
+          <img src="images/california.jpg" alt="Paris" style="width:100%" class="landpage-hover-opacity">
+          <div class="landpage-container landpage-white">
+            <p><b>California Franchise</b></p>
+            <p class="landpage-opacity">Since March,2019</p>
+            <p>456 Oak Street, Los Angeles, CA 90001, United States</p>
+            <button class="landpage-button landpage-black landpage-margin-bottom" onclick="document.getElementById('orderNow').style.display='block'">Reservation</button>
+          </div>
+        </div>
+        <div class="landpage-third landpage-margin-bottom">
+          <img src="images/pak.jpg" alt="San Francisco" style="width:100%" class="landpage-hover-opacity">
+          <div class="landpage-container landpage-white">
+            <p><b>Lahore Franchise</b></p>
+            <p class="landpage-opacity">Since April,2022</p>
+            <p>789 Maple Avenue, Lahore 54000, Pakistan</p>
+            <button class="landpage-button landpage-black landpage-margin-bottom" onclick="document.getElementById('orderNow').style.display='block'">Reservation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Now Section -->
+  <div id="orderNow" class="landpage-modal">
+    <div class="landpage-modal-content landpage-animate-top landpage-card-4">
+      <header class="landpage-container landpage-teal landpage-center landpage-padding-32"> 
+        <span onclick="document.getElementById('orderNow').style.display='none'" class="landpage-button landpage-teal landpage-xlarge landpage-display-topright">×</span>
+        <h2 class="landpage-wide"><i class="landpage-margin-right"></i>Make a Reservation</h2>
+      </header>
+      <div class="landpage-container">
+        <p><label><i class=""></i> Reserve, 18$ per person </label></p>
+        <input class="landpage-input landpage-border" type="text" placeholder="Number of Guests?">
+        <p><label><i class=""></i>Special Requests </label></p>
+        <input class="landpage-input landpage-border" type="text" placeholder="Dietary restrictions, Seating preferences">
+        <p><label><i class=""></i>Occasion </label></p>
+        <input class="landpage-input landpage-border" type="text" placeholder="If reserving for a special occasion">
+        <p><label><i class=""></i>Additional Comments </label></p>
+        <input class="landpage-input landpage-border" type="text" placeholder="Notes from the customer">
+        <p><label><i class=""></i>Phone no. </label></p>
+        <input class="landpage-input landpage-border" type="text" placeholder="Number">
+        <p><label><i class=""></i>Email </label></p>
+        <input class="landpage-input landpage-border" type="text" placeholder="Email">
+        <button class="landpage-button landpage-block landpage-teal landpage-padding-16 landpage-section landpage-right">Proceed to PAY <i class="fa fa-check"></i></button>
+        <button class="landpage-button landpage-red landpage-section" onclick="document.getElementById('orderNow').style.display='none'">Go Back </button>
+        <!-- <p class="landpage-right">Need <a href="#" class="landpage-text-blue">helandpage?</a></p> -->
+      </div>
+    </div>
+  </div>
+<!--  -->
+  <!-- The Contact Section -->
+  <div class="landpage-container landpage-content landpage-padding-64" style="max-width:800px" id="contact">
+    <h2 class="landpage-wide landpage-center">CONTACT</h2>
+    <p class="landpage-opacity landpage-center" style="font-weight: bolder;">Open Daily, 12-Hour Dining.</p>
+    <div class="landpage-row landpage-padding-32">
+      <div class="landpage-col m6 landpage-large landpage-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> DALLAS TX, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 232323<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: pdelights@mail.com<br>
+      </div>
+      <div class="landpage-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="landpage-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="landpage-half">
+              <input class="landpage-input landpage-border" type="text" placeholder="Name" required="" name="Name">
+            </div>
+            <div class="landpage-half">
+              <input class="landpage-input landpage-border" type="text" placeholder="Email" required="" name="Email">
+            </div>
+          </div>
+          <input class="landpage-input landpage-border" type="text" placeholder="Message" required="" name="Message">
+          <button class="landpage-button landpage-black landpage-section landpage-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="images/footerimg.jpg" class="landpage-image landpage-greyscale-min" style="width:100%">
+
+
+<!-- Go to top button -->
+<button onclick="goToTop()" id="goToTopBtn" title="Go to top">^</button>
+
+<!-- Footer -->
+<footer class="landpage-container landpage-padding-64 landpage-center landpage-opacity landpage-light-grey landpage-xlarge">
+  <i class="fa fa-facebook-official landpage-hover-opacity"></i>
+  <i class="fa fa-instagram landpage-hover-opacity"></i>
+  <i class="fa fa-twitter landpage-hover-opacity"></i>
+  <p class="landpage-medium">All Rights Reserved by <a href="" target="_blank"><b>Palate Delights</b></a></p>
+</footer>
+
+<script>
+
+document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById('navDemo');
+    if (!event.target.matches('.landpage-bar-item') && !event.target.matches('.fa-bars') && dropdown.classList.contains('landpage-show')) {
+        dropdown.classList.remove('landpage-show');
+    }
+});
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// // Used to toggle the menu on small screens when clicking on the menu button////
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("landpage-show") == -1) {
+    x.className += " landpage-show";
+  } else { 
+    x.className = x.className.replace(" landpage-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('orderNow');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// When user clicks this button it will take the user to the top of the page
+function goToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("goToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("goToTopBtn").style.display = "none";
+    }
+}
+
+</script>
+</body>
+</html>

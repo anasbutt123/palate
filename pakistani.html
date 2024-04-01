@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors of Pakistan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
+    <style>
+.navbar {
+ background-color: white;
+height: 138px;  /*Adjust height as needed */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+} 
+.logo {
+max-height: 60px; /* Adjust max-height as needed*/
+ width: auto;
+ padding: 9px;
+}
+
+.item1{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.item2{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.item3{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.mtnkarahi-img, .mtnkarahi-text{
+flex: 1;
+}
+.bbq-img, .bbq-text{
+flex: 1;
+}
+.biryani-img, .biryani-text{
+flex: 1;
+}
+.mtnkarahi-img{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 2px;
+    left: 13px;
+}
+.biryani-img{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 2px;
+    left: 13px;
+}
+.mtnkarahi-text{
+    position: relative;
+    left: 6%;
+    padding: 45px;
+}
+.bbq-text{
+    position: relative;
+    left: 6%;
+    padding: 45px;
+}
+.biryani-text {
+    position: relative;
+    left: 6%;
+    padding: 45px;
+}
+.it-logo{
+    width: 193px;
+    height: 47px;
+    position: relative;
+    left: 25px;
+}
+.pak-logo{
+    font-family: 'Lato';
+    width: 13%;
+    font-size: 92%;
+    color: black;
+    text-decoration-line: underline;
+    position: relative;
+    left: 4%;
+    margin-bottom: 4%;
+}
+.head1{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 25%;
+    text-decoration: underline;
+    width: 204px;
+}
+.head3{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 18%;
+    text-decoration: underline;
+    width: 302px;
+}
+.head2{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    text-decoration: underline;
+    width: 204px;
+    left: 20%;
+}
+.p{
+    font-family: "Lato", sans-serif;
+}
+.item1-p{
+    width: 75%;
+    font-size: 110%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.item3-p{
+    width: 75%;
+    font-size: 110%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.item2-p{
+    width: 70%;
+    font-size: 110%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.price{
+    width: 168px;
+    font-size: large;
+    font-family: system-ui;
+    font-weight: 500;
+}
+body {
+    overflow-x: hidden !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: -94px;
+    margin-left: -45px;
+
+
+}
+.footer-text{
+    text-align: center;
+    font-family: 'Lato';
+    font-size: medium;
+    padding: 40px !important;
+    background-color: #f1f1f1;
+    margin-block-start: -1em;
+    margin-inline-start: -1em;
+    margin-inline-end: -1em;
+    margin-block-end: -1em;
+}
+.p-img{
+    width: 483px;
+    position: relative;
+    top: 10%;
+}
+.r-img{
+    width: 483px; 
+    position: relative;
+    top: 10%;
+}
+.s-img{
+    width: 483px; 
+    position: relative; 
+    top: 10%; 
+}
+
+/* Media queries for Larger screens */
+@media screen
+    and (max-device-width: 1075px) {
+.navbar{
+    background-color: white;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    position: relative;
+    left: 38%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.logo {
+    max-height: 43px;
+    width: auto;
+    padding: 9px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.pak-logo {
+    font-family: 'Lato';
+    width: 18%;
+    font-size: 85%;
+    color: black;
+    text-decoration-line: underline;
+    position: relative;
+    left: 11%;
+    margin-bottom: 4%;
+    margin-top: 6%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item1 {
+    width: 102%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item2 {
+    width: 102%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item3 {
+    width: 102%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.p-img {
+    width: 364px;
+    position: relative;
+    top: -34px;
+    left: -9%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.r-img {
+    width: 364px;
+    position: relative;
+    top: -34px;
+    left: -9%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.s-img {
+    width: 364px;
+    position: relative;
+    top: -34px;
+    left: -9%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item1-p {
+    width: 78%;
+    font-size: 105%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item2-p {
+    width: 78%;
+    font-size: 105%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item3-p {
+    width: 78%;
+    font-size: 105%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.head1 {
+    top: 23px;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 14%;
+    text-decoration: underline;
+    width: 204px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.head3 {
+    top: 23px;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 14%;
+    text-decoration: underline;
+    width: 204px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.price {
+    width: 168px;
+    font-size: medium;
+    font-family: system-ui;
+    font-weight: 500;
+    position: relative;
+    top: -14px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.italianmenu-footer{
+    width: 103%;
+}}
+
+/* Media Queries for Mobile Devices */
+@media screen
+    and (max-device-width: 640px) {
+.logo {
+    max-height: 42px;
+    width: auto;
+    padding: 0px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.navbar {
+    background-color: white;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+    position: relative;
+    left: 51%;
+}}
+
+
+@media screen
+    and (max-device-width: 640px) {
+.pak-logo {
+    font-family: 'Lato';
+    width: 30%;
+    font-size: 92%;
+    color: black;
+    text-decoration-line: underline;
+    position: relative;
+    left: 15%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item1 {
+    width: 130%;
+    display: flex;
+    margin-bottom: -9%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item2 {
+    width: 130%;
+    display: flex;
+    margin-bottom: -9%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item3 {
+    width: 130%;
+    display: flex;
+    margin-bottom: 4%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.p-img{
+    width: 287px;
+    position: relative;
+    top: -17px;
+    left: -3%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.r-img{
+    width: 287px;
+    position: relative;
+    top: -17px;
+    left: -3%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.s-img{
+    width: 287px;
+    position: relative;
+    top: -17px;
+    left: 1%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item1-p {
+    position: relative;
+    left: -7%;
+    width: 96%;
+    font-size: 100%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 450;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item2-p {
+    position: relative;
+    left: -7%;
+    width: 96%;
+    font-size: 100%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 450;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item3-p {
+    position: relative;
+    left: -7%;
+    width: 96%;
+    font-size: 100%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 450;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.head1 {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 8%;
+    text-decoration: underline;
+    width: 189px;
+    font-size: 15px;
+    top: 28px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.head3 {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 4%;
+    text-decoration: underline;
+    width: 234px;
+    font-size: 15px;
+    top: 28px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.price {
+    width: 167px;
+    font-size: 98%;
+    font-family: system-ui;
+    font-weight: 500;
+    position: relative;
+    top: -17px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.italianmenu-footer{
+    width: 131%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+body{
+    margin-right: -200px;
+}}
+
+button{
+    font-family: system-ui;
+    color: #fff;
+    background-color: #373636;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    font-size: 110%;
+    position: relative;
+    left: -44vw;
+    top: -3vw;
+}
+
+</style>
+</head>
+
+<body>    
+<!-- Navbar -->
+<div class="landpage-top">
+    <div class="navbar">
+    <a href="index.html" target="_blank"><img src="images/logo2.png" alt="Logo" class="logo"></a>  
+    </div>
+</div>
+
+<div class="go-back">
+    <a href="index.html">
+        <button>Go Back</button>
+    </a>
+</div>
+
+<div class="pak-logo">
+    <h2>Flavors of Pakistan:</h2>
+</div>
+
+<!-- MUTTON KARAHI -->
+<section class="item1">
+<div class="mtnkarahi-text">
+    <h3 class="head1">MUTTON KARAHI</h3>
+    <br>
+    <p class="item1-p"> Tender mutton pieces are slow-cooked with a blend of aromatic spices, tomatoes, ginger, and garlic, creating a tantalizing experience for your taste buds. Each bite is a journey through the vibrant flavors of Pakistan. Crafted with passion by <i><b>Chef Ali,</b></i> our Mutton Karahi is a testament to the authentic taste of Pakistani cuisine.</p>
+    <br>
+    <p class="price">Price: $14.99
+    <br>
+    Chef: Ali Khan</p>
+</div>
+
+<div class="mtnkarahi-img">
+    <img src="images/pak-karahi1.jpg" alt="Karahi img"  class="p-img">
+</div>
+</section>
+
+<!-- SINDHI BIRYANI -->
+<section class="item2">
+    <div class="biryani-text">
+        <h3 class="head1">SINDHI BIRYANI</h3>
+        <br>
+        <p class="item2-p">This traditional dish is a symphony of aromatic spices, long-grain basmati rice, tender pieces of marinated meat, and potatoes, all slow-cooked to perfection. Each bite of our Sindhi Biryani is a burst of flavor, transporting you to the streets of Sindh. Crafted with love by <i><b>Chef Ayesha,</b></i> our Sindhi Biryani is a true representation of Pakistani culinary art.</p>
+        <br>
+        <p class="price">Price: $12.99
+        <br>
+        Chef: Ayesha Baig</p>
+    </div>
+    
+    <div class="biryani-img">
+        <img src="images/pak-biryani1.jpg" alt="biryani img" class="r-img">
+    </div>
+</section>
+
+<!-- BBQ PLATTER -->
+<section class="item3">
+    <div class="bbq-text">
+        <h3 class="head3">BARBEQUE PLATTER</h3>
+        <br>
+        <p class="item3-p">This platter features a mouthwatering selection of grilled meats, including succulent chicken tikka, spicy seekh kebabs, and tender boti kebabs, all marinated in a blend of spices and grilled to perfection. Served with a side of fresh naan bread and zesty chutney, our Barbeque Platter is a true delight. Crafted with expertise by <i><b>Chef Ahmed,</b></i> our Barbeque Platter is a culinary masterpiece that will leave you craving for more.</p>
+        <br>
+        <p class="price">Price: $19.99
+        <br>
+        Chef: Ahmad Hasan</p>
+    </div>
+
+    <div class="bbq-img">
+        <img src="images/pak-bbq1.jpg" alt="bbq img" class="s-img">
+    </div>
+    </section>
+
+            <!-- ADD MORE SECTIONS OF PRODUCTS HERE -->
+
+<footer class="italianmenu-footer">
+  <p class="footer-text">All Rights Reserved by <b>Palate Delights</b><a href="" target="_blank"></a></p>
+</footer>
+</body>
+</html>

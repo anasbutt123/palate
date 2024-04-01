@@ -1,0 +1,688 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Italian Extra</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/landpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+    .navbar {
+     background-color: white;
+    height: 73px;  /*Adjust height as needed */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    } 
+    
+     /* Style for the logo */
+     
+    .logo {
+    max-height: 60px; /* Adjust max-height as needed*/
+     width: auto;
+     padding: 9px;
+    }
+             
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    
+    #goToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 66px;
+        z-index: 99;
+        font-size: 22px;
+        background-color: white;
+        color: black;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 12px 19px 3px 19px;
+        border-radius: 34px;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 31%);
+    }
+    @media screen and (max-device-width: 640px) {
+    #goToTopBtn {
+        right: 26px;}
+    }
+    @media screen and (max-device-width: 1075px) {
+    #goToTopBtn {
+        right: 16px;}
+    }
+    
+    #goToTopBtn:hover {
+        background-color: #cdcfd0;
+    }
+    /* #book-now{
+      position: relative;
+    } */
+    #book-reserve{
+      position: relative;
+      content: "";
+      background-image: url(images/reserve.jpg) !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 0.5;
+    }
+
+/* Menu Items */
+
+.item1{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.item2{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.item3{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.pizza-img, .pizza-text{
+flex: 1;
+}
+.spgt-img, .spgt-text{
+flex: 1;
+}
+.risotto-img, .risotto-text{
+flex: 1;
+}
+.pizza-img{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 2px;
+    left: 13px;
+}
+.risotto-img{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 2px;
+    left: 13px;
+}
+.pizza-text{
+    position: relative;
+    left: 6%;
+    padding: 45px;
+}
+.spgt-text{
+    position: relative;
+    left: 6%;
+    padding: 45px;
+}
+.risotto-text {
+    position: relative;
+    left: 6%;
+    padding: 45px;
+}
+.it-logo{
+    width: 193px;
+    height: 47px;
+    position: relative;
+    left: 25px;
+}
+.italianlogo{
+    font-family: 'Lato';
+    width: 20%;
+    font-size: 92%;
+    color: black;
+    text-decoration-line: underline;
+    position: relative;
+    left: 44%;
+    margin-bottom: 9%;
+    top: 67px;
+}
+
+.head1{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 25%;
+    text-decoration: underline;
+    width: 204px;
+}
+.head3{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 18%;
+    text-decoration: underline;
+    width: 302px;
+}
+.head2{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    text-decoration: underline;
+    width: 204px;
+    left: 20%;
+}
+.p{
+    font-family: "Lato", sans-serif;
+}
+.item1-p{
+    width: 75%;
+    font-size: 110%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.item3-p{
+    width: 75%;
+    font-size: 110%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.item2-p{
+    width: 70%;
+    font-size: 110%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.price{
+    width: 168px;
+    font-size: large;
+    font-family: system-ui;
+    font-weight: 500;
+}
+.p-img{
+    width: 483px;
+    position: relative;
+    top: 10%;
+}
+.r-img{
+    width: 483px; 
+    position: relative;
+    top: 10%;
+}
+.s-img{
+    width: 483px; 
+    position: relative; 
+    top: 10%; 
+}
+
+/* Media Query for desktop */
+
+@media screen
+    and (max-device-width: 1075px) {
+.italianlogo {
+    font-family: 'Lato';
+    width: 25%;
+    font-size: 85%;
+    color: black;
+    text-decoration-line: underline;
+    position: relative;
+    left: 46%;
+    margin-bottom: 5%;
+    margin-top: 9%;
+    top: 6px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item1 {
+    width: 102%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item2 {
+    width: 102%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item3 {
+    width: 102%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.p-img {
+    width: 364px;
+    position: relative;
+    top: -34px;
+    left: -9%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.r-img {
+    width: 364px;
+    position: relative;
+    top: -34px;
+    left: -9%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.s-img {
+    width: 364px;
+    position: relative;
+    top: -34px;
+    left: -9%;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item1-p {
+    width: 78%;
+    font-size: 105%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item2-p {
+    width: 78%;
+    font-size: 105%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.item3-p {
+    width: 78%;
+    font-size: 105%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 400;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.head1 {
+    top: 23px;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 14%;
+    text-decoration: underline;
+    width: 204px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.head3 {
+    top: 23px;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 14%;
+    text-decoration: underline;
+    width: 204px;
+}}
+@media screen
+    and (max-device-width: 1075px) {
+.price {
+    width: 168px;
+    font-size: medium;
+    font-family: system-ui;
+    font-weight: 500;
+    position: relative;
+    top: -14px;
+}}
+
+/* Media Query for mobile */
+@media screen
+    and (max-device-width: 640px) {
+.italianlogo {
+    font-family: 'Lato';
+    width: 43%;
+    font-size: 92%;
+    color: black;
+    text-decoration-line: underline;
+    position: relative;
+    left: 47%;
+    margin-bottom: 11%;
+    margin-top: 8%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item1 {
+    width: 130%;
+    display: flex;
+    margin-bottom: -9%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item2 {
+    width: 130%;
+    display: flex;
+    margin-bottom: -9%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item3 {
+    width: 130%;
+    display: flex;
+    margin-bottom: 4%;
+    justify-content: center;
+    align-items: center;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.p-img{
+    width: 287px;
+    position: relative;
+    top: -17px;
+    left: -3%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.r-img{
+    width: 287px;
+    position: relative;
+    top: -17px;
+    left: -3%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.s-img{
+    width: 287px;
+    position: relative;
+    top: -17px;
+    left: 1%;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item1-p {
+    position: relative;
+    left: -7%;
+    width: 96%;
+    font-size: 100%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 450;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item2-p {
+    position: relative;
+    left: -7%;
+    width: 96%;
+    font-size: 100%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 450;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.item3-p {
+    position: relative;
+    left: -7%;
+    width: 96%;
+    font-size: 100%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-weight: 450;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.head1 {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 8%;
+    text-decoration: underline;
+    width: 189px;
+    font-size: 15px;
+    top: 28px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.head3 {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    left: 4%;
+    text-decoration: underline;
+    width: 234px;
+    font-size: 15px;
+    top: 28px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.price {
+    width: 167px;
+    font-size: 98%;
+    font-family: system-ui;
+    font-weight: 500;
+    position: relative;
+    top: -17px;
+}}
+@media screen
+    and (max-device-width: 640px) {
+.italianmenu-footer{
+    width: 131%;
+}}
+
+.btn-back{
+    font-family: system-ui;
+    color: #fff;
+    background-color: #373636;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    font-size: 110%;
+    position: relative;
+    left: 0vw;
+    top: 0vw;
+}
+.go-back{
+    position: relative;
+    left: 2%;
+    top: 165px;
+    width: 101px;
+}
+
+
+    </style>
+    </head>
+    <body>
+    <!-- Navbar with Logo  -->
+      
+    <!-- Navbar -->
+    <div class="landpage-top">
+      <div class="navbar">
+        <img src="images/logo2.png" alt="Logo" class="logo">
+    </div>
+      <div class="landpage-bar landpage-black landpage-card">
+        <a class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-medium landpage-hide-large landpage-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="landpage-bar-item landpage-button landpage-padding-large">HOME</a>
+        <a href="#about" class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-small">ABOUT US</a>
+        <a href="#book-now" class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-small">RESERVATIONS</a>
+        <a href="#contact" class="landpage-bar-item landpage-button landpage-padding-large landpage-hide-small">CONTACT</a>
+        <div class="landpage-dropdown-hover landpage-hide-small">
+          <button class="landpage-padding-large landpage-button" title="More">MENU <i class="fa fa-caret-down"></i></button>     
+          <div class="landpage-dropdown-content landpage-bar-block landpage-card-4">
+            <a href="italian.html" class="landpage-bar-item landpage-button" target="_blank">ITALIAN FOOD</a>
+            <a href="thai.html" class="landpage-bar-item landpage-button" target="_blank">THAI FOOD</a>
+            <a href="pakistani.html" class="landpage-bar-item landpage-button" target="_blank">PAKISTANI FOOD</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="landpage-bar-block landpage-black landpage-hide landpage-hide-large landpage-hide-medium landpage-top" style="margin-top:103px">
+      <a href="#about" class="landpage-bar-item landpage-button landpage-padding-large" style="font-size: 12px;
+      line-height: 1.8; margin-top: 4%;" onclick="myFunction()">ABOUT US</a>
+      <a href="#book-now" class="landpage-bar-item landpage-button landpage-padding-large" style="font-size: 12px;
+      line-height: 1.8;" onclick="myFunction()">RESERVATIONS</a>
+      <a href="#contact" class="landpage-bar-item landpage-button landpage-padding-large" style="font-size: 12px;
+      line-height: 1.8;" onclick="myFunction()">CONTACT</a>
+      <h2 style="position: relative; left: 7%; font-size: 100%; margin-bottom: 2%; margin-top: 7%; text-decoration: underline; font-weight: 500;">MENU</h2>
+      <a href="italian.html" class="landpage-bar-item landpage-button" style="font-size: 12px;
+      line-height: 1.8;" onclick="myFunction()" target="_blank">ITALIAN FOOD</a>
+      <a href="thai.html" class="landpage-bar-item landpage-button" style="font-size: 12px;
+      line-height: 1.8;" onclick="myFunction()" target="_blank">THAI FOOD</a>
+      <a href="pakistani.html" class="landpage-bar-item landpage-button" style="font-size: 12px;
+      line-height: 1.8;" onclick="myFunction()" target="_blank">PAKISTANI FOOD</a>    
+      
+    </div>
+    
+    <!-- Page content -->
+    <div class="landpage-content" style="max-width:2000px;margin-top:46px">
+    
+
+        <div class="go-back">
+            <a href="index.html">
+                <button class="btn-back">Go Back</button>
+            </a>
+        </div>
+        
+        <div class="italianlogo">
+            <h2>Italian Delicacy:</h2>
+        </div>
+        
+        <!-- PIZZA -->
+        <section class="item1">
+        <div class="pizza-text">
+            <h3 class="head1">MARGHERITA PIZZA</h3>
+            <br>
+            <p class="item1-p">An Italian classic, our Margherita pizza is a delightful blend of fresh ingredients. Topped with tangy tomato sauce, creamy mozzarella cheese, and fragrant basil leaves, each bite is a taste of Italy. Handcrafted by <i><b>Chef Giovanni</b></i>, our Margherita pizza is baked to perfection in a wood-fired oven, ensuring a crispy crust and rich flavors. Buon appetito!</p>
+            <br>
+            <p class="price">Price: $10.99
+            <br>
+            Chef: Giovanni Rossi</p>
+        </div>
+        
+        <div class="pizza-img">
+            <img src="images/pizza.jpg" alt="pizza img"  class="p-img">
+        </div>
+        </section>
+        
+        <!-- Risotto -->
+        <section class="item2">
+            <div class="risotto-text">
+                <h3 class="head1">MUSHROOM RISOTTO</h3>
+                <br>
+                <p class="item2-p">Indulge in our creamy Mushroom Risotto, a comforting dish that's a blend of Arborio rice, earthy mushrooms, and savory Parmesan cheese. Slow-cooked to perfection, each bite is a rich and flavorful experience. <i><b>Chef Sofia's</b></i> culinary expertise shines in this dish, making it a must-try for risotto lovers.</p>
+                <br>
+                <p class="price">Price: $12.99
+                <br>
+                Chef: Sofia Martinez</p>
+            </div>
+            
+            <div class="risotto-img">
+                <img src="images/risotto.jpg" alt="risotto img" class="r-img">
+            </div>
+        </section>
+        
+        <!-- SPAGHETTI -->
+        <section class="item3">
+            <div class="spgt-text">
+                <h3 class="head3">CLASSIC SPAGHETTI BOLOGNESE</h3>
+                <br>
+                <p class="item3-p">Savor the flavors of Italy with our Classic Spaghetti Bolognese. Made with al dente spaghetti noodles, simmered in a rich, meaty Bolognese sauce, and topped with Parmesan cheese, each bite is a taste of comfort. <i><b>Chef Luca's</b></i> authentic recipe and passion for Italian cuisine shine through in this timeless dish.</p>
+                <br>
+                <p class="price">Price: $11.99
+                <br>
+                Chef: Luca Rossi</p>
+            </div>
+        
+            <div class="spgt-img">
+                <img src="images/pasta.jpg" alt="spaghetti img" class="s-img">
+            </div>
+            </section>
+        
+                    <!-- ADD MORE SECTIONS OF PRODUCTS HERE -->
+     
+    
+      
+    
+     
+  
+      
+    
+    
+    
+    <!-- Go to top button -->
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to top">^</button>
+    
+    <!-- Footer -->
+    <footer class="landpage-container landpage-padding-64 landpage-center landpage-opacity landpage-light-grey landpage-xlarge">
+      <i class="fa fa-facebook-official landpage-hover-opacity"></i>
+      <i class="fa fa-instagram landpage-hover-opacity"></i>
+      <i class="fa fa-twitter landpage-hover-opacity"></i>
+      <p class="landpage-medium">All Rights Reserved by <a href="" target="_blank"><b>Palate Delights</b></a></p>
+    </footer>
+    
+    <script>
+    
+    document.addEventListener('click', function(event) {
+        var dropdown = document.getElementById('navDemo');
+        if (!event.target.matches('.landpage-bar-item') && !event.target.matches('.fa-bars') && dropdown.classList.contains('landpage-show')) {
+            dropdown.classList.remove('landpage-show');
+        }
+    });
+    
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+    
+    // // Used to toggle the menu on small screens when clicking on the menu button////
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("landpage-show") == -1) {
+        x.className += " landpage-show";
+      } else { 
+        x.className = x.className.replace(" landpage-show", "");
+      }
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('orderNow');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    // When user clicks this button it will take the user to the top of the page
+    function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("goToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("goToTopBtn").style.display = "none";
+        }
+    }
+    
+    </script>
+    </body>
+    </html>
